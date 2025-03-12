@@ -1,0 +1,902 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wanderly - Travel Adventures</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+
+  <!-- CSS -->
+  <link href="./style.css" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <div class="container-fluid position-fixed top-0">
+      <div class="container d-flex justify-content-between align-items-center">
+        <div class="logo__container">
+          <img class="logo" src="./assets/logo.png">
+        </div>
+
+        <div class="mobile__menu__toggle">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+
+        <div class="menu__bar d-flex gap-5">
+          <a href="#hero" class="active">Home</a>
+          <a href="#destination">Tour</a>
+          <a href="#why-us">Why Us</a>
+          <a href="#faq">FAQ</a>
+          <a href="#contact">Contact</a>
+        </div>
+
+        <!-- Button Login -->
+        <button type="button" class="login__button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        Login
+      </button>
+
+      </div>
+    </div>
+  </header>
+
+
+  <!-- Body Login -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog pt-5 mt-5">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title text-center" id="exampleModalLabel">Login</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="gmail">
+            <p style="margin-bottom:-1px;">Email</p>
+            <input type="email" class="from-control mb-3" placeholder="">
+          </div>
+
+          <div class="password">
+            <p style="margin-bottom:-1px;">Password</p>
+            <input type="password" class="from-control mb-3" placeholder="">
+          </div>
+
+          <div class="remember-forgot d-flex justify-content-between">
+            <a href="#">Lupa Password?</a>
+          </div>
+
+          <div class="buttonsubmitlogin mt-1">
+            <div class="buttonlogin">
+              <button class="button-login text-white">Login</button>
+            </div>
+            <div class="buttonlogingoogle mt-1">
+              <button class="button-login-google text-white"><i class="fa-brands fa-google text-white"></i>  Login dengan Google</button>
+            </div>
+          </div>
+          <p class="text-center mt-3">Tidak memiliki akun? <a href="#">Daftar</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section class="hero" id="hero">
+    <div class="container-fluid h-100">
+      <div class="container">
+        <div class="text__container mt-5">
+          <h1>Benjor Pine Camping Ground</h1>
+          <h3>Nikmati petualangan alam yang menenangkan dan penuh cerita. Benjor Pine Camping Ground, tempat keindahan alam yang tak terlupakan.</h3>
+        </div>
+
+        <div class="steps__container">
+          <div class="step">
+            <h5>Pengalaman Kami</h5>
+            <i class="fa-solid fa-arrow-right"></i>
+          </div>
+
+          <div class="step">
+            <h5>Rencana Perjalanan</h5>
+            <i class="fa-solid fa-arrow-right"></i>
+          </div>
+
+          <div class="step">
+            <h5>Blog</h5>
+            <i class="fa-solid fa-arrow-right"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path fill-opacity="1"
+        d="M0,160L40,165.3C80,171,160,181,240,176C320,171,400,149,480,154.7C560,160,640,192,720,202.7C800,213,880,203,960,197.3C1040,192,1120,192,1200,176C1280,160,1360,128,1400,112L1440,96L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z">
+      </path>
+    </svg>
+  </section>
+
+  <section class="easy__book">
+    <div class="book__container container">
+      <div class="book__wrapper">
+        <div class="book__text">
+          <h3 class="text-active">Segalanya Untuk Berkemah</h3>
+        </div>
+
+        <a href="#" class="book__button">Reservasi Sekarang</a>
+      </div>
+    </div>
+  </section>
+
+<section class="destination" id="destination">
+    <div class="container-fluid">
+      <div class="container">
+        <div class="section__title">
+          <div class="section__title__main">
+            <h3>Destinasi Pilihan</h3>
+            <h1>Jelajahi Benjor Pine Camp</h1>
+          </div>
+
+          <div class="section__title__sub">
+            <p>
+              Pililah destinasi terbaik dari Benjor Camp untuk pengalaman yang
+              tak terlupakan.
+            </p>
+          </div>
+        </div>
+
+        <div class="destination__wrapper">
+          <div class="destination__content">
+            <div class="destination__image">
+              <img src="./assets/destination_1.jpg" />
+            </div>
+            <div class="destination__info">
+              <div class="destinations__title">
+                <h3>Flying Fox</h3>
+              </div>
+              <div class="destination__text">
+                <p>
+                  <i class="fa-regular fa-clock"></i>
+                  10.00 - 13.00 WIB
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="destination__content">
+            <div class="destination__image">
+              <img src="./assets/destination_2.jpg" />
+            </div>
+            <div class="destination__info">
+              <div class="destinations__title">
+                <h3>Caffe & Kantin</h3>
+              </div>
+              <div class="destination__text">
+                <p>
+                  <i class="fa-regular fa-clock"></i>
+                  07.00 - 18.00 WIB
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="destination__content">
+            <div class="destination__image">
+              <img src="./assets/destination_3.jpg" />
+            </div>
+            <div class="destination__info">
+              <div class="destinations__title">
+                <h3>Area Panah & Shuriken</h3>
+              </div>
+              <div class="destination__text">
+                <p>
+                  <i class="fa-regular fa-clock"></i>
+                  09.30 - 15.30 WIB
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="destination__content">
+            <div class="destination__image">
+              <img src="./assets/destination_4.jpg" />
+            </div>
+            <div class="destination__info">
+              <div class="destinations__title">
+                <h3>Kebun Budidaya Kopi</h3>
+              </div>
+              <div class="destination__text">
+                <p>
+                  <i class="fa-regular fa-clock"></i>
+                  07.00 - 17.00 WIB
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="cta">See More</button>
+      </div>
+    </div>
+  </section>
+  
+
+  <section class="packages" id="packages">
+    <div class="container-fluid">
+      <div class="container">
+
+        <div class="section__title">
+          <div class="section_title_main">
+            <h3>Paket yang Tersedia</h3>
+            <h1>Perjalanan Sempurna Anda Menanti</h1>
+          </div>
+
+          <div class="section_title_sub">
+            <p>Jelajahi paket luar biasa kami untuk pengalaman tak terlupakan. Kami memiliki sesuatu untuk setiap wisatawan.</p>
+          </div>
+        </div>
+
+        <div class="packages__wrapper d-grid">
+
+          <div class="packages__content">
+
+            <div class="packages__image">
+              <img src="./assets/paket 1.jpg">
+            </div>
+
+            <h3>Adventure Breeze</h3>
+            <p>Fun Game, Flying Fox dan Ice Breaking</p>
+
+            <div class="packages__details mt-4">
+              <div>
+                <h5>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </h5>
+              </div>
+            </div>
+
+            <div class="packages__price">
+              <div>
+                <h5>Rp. 30.000<span>/Orang</span></h5>
+              </div>
+
+            </div>
+
+            <div class="packages__order">
+              <h4>Pesan Sekarang</h4>
+            </div>
+
+          </div>
+
+          <div class="packages__content">
+
+            <div class="packages__image">
+              <img src="./assets/paket 2.jpg">
+            </div>
+
+            <h3>Explorer’s Thrill</h3>
+            <p>Outbound Petualangan, Flying Fox dan Ice Breaking </p>
+
+            <div class="packages__details mt-4">
+              <div>
+                <h5>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </h5>
+              </div>
+            </div>
+
+            <div class="packages__price">
+              <div>
+                <h5>Rp. 40.000<span>/Orang</span></h5>
+              </div>
+
+            </div>
+
+            <div class="packages__order">
+              <h4>Pesan Sekarang</h4>
+            </div>
+
+          </div>
+
+          <div class="packages__content">
+
+            <div class="packages__image">
+              <img src="./assets/paket 3.jpg">
+            </div>
+
+            <h3>Adrenaline Voyage</h3>
+            <p>Fun Game, Outbound Petualangan, Flying Fox, Ice Breaking</p>
+
+            <div class="packages__details">
+              <div>
+                <h5>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </h5>
+              </div>
+            </div>
+
+            <div class="packages__price">
+              <div>
+                <h5>Rp. 50.000<span>/Orang</span></h5>
+              </div>
+
+            </div>
+
+            <div class="packages__order">
+              <h4>Pesan Sekarang</h4>
+            </div>
+
+          </div>
+
+          <div class="packages__content">
+
+            <div class="packages__image">
+              <img src="./assets/bghero.jpg">
+            </div>
+
+            <h3>Nature Haven</h3>
+            <p>Iclude All, Tracking Coban, Camp Night, Api Unggun, Renungan Malam</p>
+
+            <div class="packages__details">
+              <div>
+                <h5>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </h5>
+              </div>
+            </div>
+
+            <div class="packages__price">
+              <div>
+                <h5>Rp. 100.000<span>/Orang</span></h5>
+              </div>
+
+            </div>
+
+            <div class="packages__order">
+              <h4>Pesan Sekarang</h4>
+            </div>
+
+          </div>
+
+        </div>
+        
+      </div>
+
+    </div>
+
+  </section>
+
+  <section class="process" id="process">
+    <div class="container-fluid">
+      <div class="container">
+
+        <div class="process__wrapper">
+          <div class="process__content">
+            <div class="process__image">
+              <img src="./assets/why-us.webp">
+            </div>
+          </div>
+
+          <div class="process__content">
+            <div class="section__title">
+              <div class="section__title__main">
+                <h3>Layanan Yang Beragam</h3>
+                <h1>Apa Saja Yang Tersedia</h1>
+              </div>
+            </div>
+
+            <div class="process__steps__wrapper">
+              <div class="process__steps__content">
+                <div class="icon__wrapper">
+                  <i class="fa-solid fa-compass"></i>
+                </div>
+                <div class="process__steps__text">
+                  <h3>Penyewaan Alat Camping</h3>
+                  <p>Lengkapi petualangan Anda dengan perlengkapan camping berkualitas tinggi untuk pengalaman yang nyaman dan seru.</p>
+                </div>
+              </div>
+
+              <div class="process__steps__content">
+                <div class="icon__wrapper">
+                  <i class="fa-solid fa-ticket"></i>
+                </div>
+                <div class="process__steps__text">
+                  <h3>Wisata Edukasi Kopi</h3>
+                  <p>Pelajari proses pembuatan kopi dari biji hingga cangkir sambil menikmati perjalanan wisata yang edukatif dan menyenangkan.</p>
+                </div>
+              </div>
+
+              <div class="process__steps__content">
+                <div class="icon__wrapper">
+                  <i class="fa-solid fa-credit-card"></i>
+                </div>
+                <div class="process__steps__text">
+                  <h3>Jasa Dokumentasi 
+                  </h3>
+                  <p>Rekam setiap momen berharga Anda dengan layanan dokumentasi profesional untuk hasil terbaik.</p>
+                </div>
+              </div>
+
+              <div class="process__steps__content">
+                <div class="icon__wrapper">
+                  <i class="fa-solid fa-map"></i>
+                </div>
+                <div class="process__steps__text">
+                  <h3>Penyewaan Fasilitas seperti Aula dan Pondok Kayu</h3>
+                  <p>Dapatkan suasana nyaman dengan menyewa aula atau pondok kayu kami, cocok untuk acara, gathering, atau relaksasi.</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="why-us" id="why-us">
+    <div class="container-fluid">
+      <div class="container">
+        <div class="section__title">
+          <div class="section_title_main">
+            <h3>Apa yang Membedakan Kami</h3>
+            <h1>Rasakan Perbedaannya</h1>
+          </div>
+
+          <div class="section_title_sub">
+            <p>Kami memastikan kenyamanan Anda dengan layanan yang dipersonalisasi, penawaran eksklusif, dan pengalaman perjalanan yang lancar.</p>
+          </div>
+        </div>
+
+        <div class="why-us-wrapper">
+          <div class="why-us-content">
+            <div class="why-us-image">
+              <img src="./assets/keunggulan 1.jpg" alt="">
+            </div>
+            <div class="why-us-text">
+              <h3>Pemandangan Alam Instagramable</h3>
+              <p>Pemandangan alam yang luar biasa, memberikan pengalaman visual yang tak terlupakan. Keindahan alam yang memukau ini juga sangat instagramable, sempurna untuk mengabadikan momen indah Anda.</p>
+            </div>
+
+            <div class="timeline__point"></div>
+          </div>
+
+          <div class="why-us-content">
+            <div class="why-us-text">
+              <h3>Fasilitas Lengkap & Nyaman</h3>
+              <p>Dilengkapi dengan fasilitas lengkap, tempat yang bersih, dan nyaman, memastikan Anda merasa betah selama berada di Benjor Pine Camping Ground. Kami selalu menjaga kenyamanan dan kebersihan agar pengalaman Anda lebih menyenangkan.
+              </p>
+            </div>
+            <div class="why-us-image">
+              <img src="./assets/keunggulan 2.jpg" alt="">
+            </div>
+
+            <div class="timeline__point"></div>
+          </div>
+
+          <div class="why-us-content">
+            <div class="why-us-image">
+              <img src="./assets/keunggulan 3.jpg" alt="">
+            </div>
+            <div class="why-us-text">
+              <h3>Harga Terjangkau</h3>
+              <p>Dengan harga yang ramah di kantong, Anda dapat merasakan kebahagiaan berkemah bersama keluarga, menciptakan momen tak terlupakan tanpa perlu khawatir soal biaya yang tinggi.</p>
+            </div>
+
+            <div class="timeline__point"></div>
+          </div>
+
+          <div class="why-us-content">
+            <div class="why-us-text">
+              <h3>Pemandu Wisata Ramah</h3>
+              <p>Didukung oleh pemandu wisata yang ramah dan berpengalaman, yang siap membantu dan memberikan informasi seputar alam dan aktivitas seru yang bisa Anda lakukan di sekitar area camping ground.</p>
+            </div>
+            <div class="why-us-image">
+              <img src="./assets/keunggulan 4.png" alt="">
+            </div>
+
+            <div class="timeline__point"></div>
+          </div>
+
+          <div class="timeline"></div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="faq" id="faq">
+    <div class="container-fluid">
+      <div class="container">
+        <div class="section__title">
+          <div class="section__title__main">
+            <h3>Pertanyaan Umum</h3>
+            <h1>Temukan Jawaban Anda</h1>
+          </div>
+
+          <div class="section__title__sub">
+            <p>Cari jawaban cepat untuk pertanyaan umum dan dapatkan informasi yang Anda butuhkan.</p>
+          </div>          
+        </div>
+
+        <div class="faq__wrapper">
+
+          <div class="faq__content">
+            <div class="faq__title">
+              <h3>Apa yang perlu dibawa saat camping di Camp</h3>
+
+              <button class="faq-button" data-faq="1"><i class="fa-solid fa-plus"></i></button>
+            </div>
+
+            <div class="faq__answer answer-1">
+              <p>Anda perlu membawa perlengkapan camping seperti tenda, kantong tidur, matras, pakaian hangat, peralatan masak, dan makanan atau camilan. Jangan lupa juga untuk membawa perlengkapan kebersihan pribadi, seperti sabun, tisu basah, dan sampah untuk menjaga kebersihan area camping.</p>
+            </div>
+          </div>
+
+          <div class="faq__content">
+            <div class="faq__title">
+              <h3>Apa saja fasilitas yang tersedia di Benjor Pine Camp Ground</h3>
+
+              <button class="faq-button" data-faq="2"><i class="fa-solid fa-plus"></i></button>
+            </div>
+
+            <div class="faq__answer answer-2">
+              <p>Benjor Pine Camp Ground menyediakan fasilitas seperti toilet, kamar mandi, area parkir, tempat masak, dan area berkumpul. Kami juga menyediakan beberapa tempat untuk beristirahat dan fasilitas untuk aktivitas outdoor seperti Flying Fox dan berkemah.</p>
+            </div>
+          </div>
+
+          <div class="faq__content">
+            <div class="faq__title">
+              <h3>Apakah ada batasan waktu untuk mendirikan tenda atau berkemah?</h3>
+
+              <button class="faq-button" data-faq="3"><i class="fa-solid fa-plus"></i></button>
+            </div>
+
+            <div class="faq__answer answer-3">
+              <p>Tidak ada batasan waktu khusus untuk mendirikan tenda atau berkemah, namun kami menyarankan untuk tiba sebelum matahari terbenam agar Anda dapat menyiapkan peralatan dengan nyaman dan aman.</p>
+            </div>
+          </div>
+
+          <div class="faq__content">
+            <div class="faq__title">
+              <h3>Apakah diperbolehkan untuk membawa hewan peliharaan?</h3>
+
+              <button class="faq-button" data-faq="4"><i class="fa-solid fa-plus"></i></button>
+            </div>
+
+            <div class="faq__answer answer-4">
+              <p>Maaf, untuk menjaga kenyamanan semua pengunjung, hewan peliharaan tidak diperbolehkan di area camping ground ini. Kami menyarankan agar Anda mencari tempat penginapan yang ramah hewan peliharaan jika perlu membawa hewan Anda.</p>
+            </div>
+          </div>
+
+          <div class="faq__content">
+            <div class="faq__title">
+              <h3>Apakah ada kebijakan kebersihan yang harus diikuti saat camping di sini?</h3>
+
+              <button class="faq-button" data-faq="5"><i class="fa-solid fa-plus"></i></button>
+            </div>
+
+            <div class="faq__answer answer-5">
+              <p>Kami sangat mengutamakan kebersihan. Kami meminta pengunjung untuk menjaga kebersihan lingkungan dengan membawa kembali semua sampah, menggunakan fasilitas yang disediakan dengan bijak, dan menjaga area camping tetap bersih dan rapi. Pengunjung juga diharapkan untuk mengikuti petunjuk kebersihan yang ada di lokasi</p>
+            </div>
+          </div>
+
+        </div>
+
+        <div id="carouselExampleCaptions" class="carousel slide">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="review__container">
+                <div class="review__wrapper">
+                  <div class="review__content">
+                    <div class="review__profile">
+                      <div class="review__image">
+                        <img src="./assets/review-1.jpg" alt="">
+                      </div>
+                      <div class="review__name">
+                        <h4>Siti Pratama</h4>
+                        <p>Penasihat Perjalanan</p>
+                      </div>
+                    </div>
+                  </div>
+      
+                  <div class="review__content">
+                    <div class="quote__container">
+                      <i class="fa-solid fa-quote-left"></i>
+                    </div>
+      
+                    <div class="review__text">
+                      <p>Camping ground menyediakan pengalaman berkemah yang menyenangkan dengan berbagai pilihan lokasi yang nyaman dan aman. Platform ini memudahkan Anda menemukan tempat tersembunyi dan menikmati keindahan alam. Dukungan 24/7 selalu tersedia untuk memastikan kenyamanan selama perjalanan. Camping ground cocok untuk petualang yang ingin menikmati pengalaman berkemah yang bebas ribet dan penuh kenyamanan.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="review__container">
+                <div class="review__wrapper">
+                  <div class="review__content">
+                    <div class="review__profile">
+                      <div class="review__image">
+                        <img src="./assets/review-2.jpg" alt="">
+                      </div>
+                      <div class="review__name">
+                        <h4>Budi Santoso</h4>
+                        <p>Penasihat Perjalanan</p>
+                      </div>
+                    </div>
+                  </div>
+      
+                  <div class="review__content">
+                    <div class="quote__container">
+                      <i class="fa-solid fa-quote-left"></i>
+                    </div>
+      
+                    <div class="review__text">
+                      <p>Camping ground menyediakan pengalaman berkemah yang menyenangkan dengan berbagai pilihan lokasi yang nyaman dan aman. Platform ini memudahkan Anda menemukan tempat tersembunyi dan menikmati keindahan alam. Dukungan 24/7 selalu tersedia untuk memastikan kenyamanan selama perjalanan. Camping ground cocok untuk petualang yang ingin menikmati pengalaman berkemah yang bebas ribet dan penuh kenyamanan.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+               <div class="review__container">
+                <div class="review__wrapper">
+                  <div class="review__content">
+                    <div class="review__profile">
+                      <div class="review__image">
+                        <img src="./assets/review-3.jpg" alt="">
+                      </div>
+                      <div class="review__name">
+                        <h4>Andi Pratama</h4>
+                        <p>Penasihat Perjalanan</p>
+                      </div>
+                    </div>
+                  </div>
+      
+                  <div class="review__content">
+                    <div class="quote__container">
+                      <i class="fa-solid fa-quote-left"></i>
+                    </div>
+      
+                    <div class="review__text">
+                      <p>Camping ground menyediakan pengalaman berkemah yang menyenangkan dengan berbagai pilihan lokasi yang nyaman dan aman. Platform ini memudahkan Anda menemukan tempat tersembunyi dan menikmati keindahan alam. Dukungan 24/7 selalu tersedia untuk memastikan kenyamanan selama perjalanan. Camping ground cocok untuk petualang yang ingin menikmati pengalaman berkemah yang bebas ribet dan penuh kenyamanan.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="ouroffices pt-5">
+      <div
+        class="container-fluid orofis d-flex justify-content-center align-items-center gap-5"
+      >
+        <div class="row p-4 align-items-center" style="border-radius: 5px">
+          <div class="col-xl-6 col-md-12 col-sm-12 deskripsi mb-4">
+            <div class="contact__container">
+              <h3>Butuh Bantuan Untuk Memesan?</h3>
+
+              <div class="contact__details">
+                <p>
+                  Para ahli kami tersedia 24/7 untuk membantu Anda.
+                </p>
+                <p>
+                  Hubungi kami di <span>+62 8224 7021 191</span> atau terhubung dengan kami secara online dengan mengklik tombol
+                  <span>Contact Us</span>
+                </p>
+              </div>
+
+              <div class="contact__button">
+                <button>Contact Us</button>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="col-xl-6 col-md-12 col-sm-12 maps">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3951.072522598472!2d112.82620147613282!3d-7.991447671494692!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd63b1e801f51dd%3A0xc7b42d6e125a7930!2sBenjor%20Pine%20Camping%20Ground!5e0!3m2!1sid!2sid!4v1737605396877!5m2!1sid!2sid"
+              width="100%"
+              height="300"
+              style="border-radius: 10px; border: 2px solid #1b5e20"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    <!-- message -->
+  </section>
+
+  <section id="blog" class="blog">
+    <div class="container-fluid">
+      <div class="container">
+        <div class="section__title">
+          <div class="section__title__main">
+            <h3>Blog</h3>
+            <h1>Cerita Petualangan Kami</h1>
+          </div>
+        
+          <div class="section__title__sub">
+            <p>Temukan tips, pengalaman, dan cerita untuk petualangan Anda!</p>
+          </div>
+          
+        </div>  
+
+        <div class="row post-container">
+  
+          <div class="col-xl-4 col-md-6 col-sm-12 mt-4">
+            <a href="#" class="post-link">
+              <div class="post">
+                <div class="post-image">
+                  <img src="./assets/blog-1.jpg" />
+                </div>
+                <div class="post-content">
+                  <div class="post-title">Tips Pemanahan untuk Kegiatan Camping</div>
+                  <div class="post-date">January 15, 2025 - 10 menit</div>
+                </div>
+              </div>
+            </a>
+          </div>
+          
+          <div class="col-xl-4 col-md-6 col-sm-12 mt-4">
+            <a href="#" class="post-link">
+              <div class="post">
+                <div class="post-image">
+                  <img src="./assets/blog-2.jpg" />
+                </div>
+                <div class="post-content">
+                  <div class="post-title">Panduan Singkat Budi Daya Kopi</div>
+                  <div class="post-date">December 22, 2024 - 15 menit</div>
+                </div>
+              </div>
+            </a>
+          </div>
+          
+          <div class="col-xl-4 col-md-6 col-sm-12 mt-4">
+            <a href="#" class="post-link">
+              <div class="post">
+                <div class="post-image">
+                  <img src="./assets/blog-3.jpg" />
+                </div>
+                <div class="post-content">
+                  <div class="post-title">Top Menu Kantin yang Wajib Dicoba</div>
+                  <div class="post-date">February 2, 2025 - 10 menit</div>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-xl-4 col-md-6 col-sm-12 mt-4">
+            <a href="#" class="post-link">
+              <div class="post">
+                <div class="post-image">
+                  <img src="./assets/blog-4.jpg" />
+                </div>
+                <div class="post-content">
+                  <div class="post-title">Top Tempat Selfie Yang Indah Dipandang</div>
+                  <div class="post-date">January 15, 2025 - 10 menit</div>
+                </div>
+              </div>
+            </a>
+          </div>
+          
+          <div class="col-xl-4 col-md-6 col-sm-12 mt-4">
+            <a href="#" class="post-link">
+              <div class="post">
+                <div class="post-image">
+                  <img src="./assets/blog-5.jpg" />
+                </div>
+                <div class="post-content">
+                  <div class="post-title">Petualangan Seru dengan Flying Fox</div>
+                  <div class="post-date">December 22, 2024 - 15 menit</div>
+                </div>
+              </div>
+            </a>
+          </div>
+          
+          <div class="col-xl-4 col-md-6 col-sm-12 mt-4">
+            <a href="#" class="post-link">
+              <div class="post">
+                <div class="post-image">
+                  <img src="./assets/blog-6.jpg"/>
+                </div>
+                <div class="post-content">
+                  <div class="post-title">Mengayuh Sepeda Menyusuri Keindahan</div>
+                  <div class="post-date">February 2, 2025 - 10 menit</div>
+                </div>
+              </div>
+            </a>
+          </div>
+               
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer py-5" id="contact">
+    <div class="container">
+      <div class="row gy-4">
+
+        <div class="col-lg-4 col-md-6">
+          <div class="footer__img">
+            <img src="./assets/logo-black.png" class="footer__logo">
+          </div>
+          <p class="footer__text mb-3">
+            Benjor Pine Camp Ground menyediakan tempat berkemah yang tenang dengan fasilitas lengkap untuk pengalaman luar ruangan yang tak terlupakan.</p>
+          <div class="footer__social">
+            <a href="#" class="social-icon me-2"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#" class="social-icon me-2"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#" class="social-icon"><i class="fa-brands fa-instagram"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-6">
+          <h4 class="mb-3">Links</h4>
+          <ul class="list-unstyled">
+            <li class="mb-2"><a href="#hero">Home</a></li>
+            <li class="mb-2"><a href="#destination">Tour</a></li>
+            <li class="mb-2"><a href="#why-us">Why Us</a></li>
+            <li class="mb-2"><a href="#faq">FAQ</a></li>
+            <li class="mb-2"><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <h4 class="mb-3">Kontak Kami</h4>
+          <div class="social__container">
+            <p class="mb-1">Email: <span>benjorpinecampground@gmail.com</span></p>
+            <p class="mb-1">WhatsApp: +62 8224 7021 191</p>
+            <p class="mb-1">Tiktok: @benjorpinecampground</p>
+            <p class="mb-1">Instagram: @benjorpine_campingground</p>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <h4 class="mb-3">Tentang Kami</h4>
+          <div>
+            <p>Benjor Pine Camp Ground menyediakan pengalaman berkemah dengan fasilitas lengkap dan suasana alam yang tenang.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="./app.js"></script>
+
+</body>
+
+</html>
